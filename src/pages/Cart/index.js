@@ -36,7 +36,7 @@ function Cart({ cart, total, removeFromCart, updateAmount }) {
         </thead>
         <tbody>
           {cart.map(product => (
-            <tr>
+            <tr key={product.id}>
               <td>
                 <img src={product.image} alt={product.title} />
               </td>
@@ -70,10 +70,8 @@ function Cart({ cart, total, removeFromCart, updateAmount }) {
           ))}
         </tbody>
       </ProductTable>
-
       <footer>
         <button type="button">Check out</button>
-
         <Total>
           <span>TOTAL</span>
           <strong>{total}</strong>
