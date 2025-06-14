@@ -4,11 +4,13 @@ import { Provider } from 'react-redux';
 
 import './config/ReactotronConfig';
 
-import GlobalStyle from './styles/global';
 import Header from './components/Header';
+
 import Routes from './routes';
 
 import store from './store';
+
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
